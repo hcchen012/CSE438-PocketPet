@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB198C8828DF0A8900314A77 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB198C8728DF0A8900314A77 /* Pet.swift */; };
 		BB7BE5C928CF872A00CA2E88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BE5C828CF872A00CA2E88 /* AppDelegate.swift */; };
 		BB7BE5CB28CF872A00CA2E88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BE5CA28CF872A00CA2E88 /* SceneDelegate.swift */; };
 		BB7BE5CD28CF872A00CA2E88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BE5CC28CF872A00CA2E88 /* ViewController.swift */; };
 		BB7BE5D028CF872A00CA2E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7BE5CE28CF872A00CA2E88 /* Main.storyboard */; };
 		BB7BE5D228CF872E00CA2E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7BE5D128CF872E00CA2E88 /* Assets.xcassets */; };
 		BB7BE5D528CF872E00CA2E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7BE5D328CF872E00CA2E88 /* LaunchScreen.storyboard */; };
+		BB7F7F7928E2A1F1008CD2D0 /* dogBark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F7F7828E2A1F1008CD2D0 /* dogBark.mp3 */; };
+		BB7F7F7D28E2A25B008CD2D0 /* fishSplash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F7F7C28E2A25B008CD2D0 /* fishSplash.mp3 */; };
+		BB7F7F7F28E2A27E008CD2D0 /* bunnyBounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F7F7E28E2A27E008CD2D0 /* bunnyBounce.mp3 */; };
+		BB7F7F8328E2A309008CD2D0 /* levelSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F7F8228E2A309008CD2D0 /* levelSound.mp3 */; };
+		BB7F7F8528E2A58A008CD2D0 /* evolveSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB7F7F8428E2A58A008CD2D0 /* evolveSound.mp3 */; };
+		BBBBB64928E29B1100CB6CBC /* catMeow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BBBBB64828E29B1100CB6CBC /* catMeow.mp3 */; };
+		BBBBB64B28E29B6100CB6CBC /* birdChirp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BBBBB64A28E29B6100CB6CBC /* birdChirp.mp3 */; };
+		BBD6051528DAEE56009B796C /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD6051428DAEE56009B796C /* DisplayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB198C8728DF0A8900314A77 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		BB198C8928E171BF00314A77 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		BB7BE5C528CF872A00CA2E88 /* PocketPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7BE5C828CF872A00CA2E88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7BE5CA28CF872A00CA2E88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +35,14 @@
 		BB7BE5D128CF872E00CA2E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB7BE5D428CF872E00CA2E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB7BE5D628CF872E00CA2E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7F7F7828E2A1F1008CD2D0 /* dogBark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dogBark.mp3; path = "Assets.xcassets/Small-dog-barking-noise/dogBark.mp3"; sourceTree = "<group>"; };
+		BB7F7F7C28E2A25B008CD2D0 /* fishSplash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fishSplash.mp3; path = "Assets.xcassets/Small-water-splash-sound-effect/fishSplash.mp3"; sourceTree = "<group>"; };
+		BB7F7F7E28E2A27E008CD2D0 /* bunnyBounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bunnyBounce.mp3; path = Assets.xcassets/bunnyBounce/bunnyBounce.mp3; sourceTree = "<group>"; };
+		BB7F7F8228E2A309008CD2D0 /* levelSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = levelSound.mp3; path = "Assets.xcassets/Game-level-up/levelSound.mp3"; sourceTree = "<group>"; };
+		BB7F7F8428E2A58A008CD2D0 /* evolveSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = evolveSound.mp3; path = Assets.xcassets/Evolve/evolveSound.mp3; sourceTree = "<group>"; };
+		BBBBB64828E29B1100CB6CBC /* catMeow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = catMeow.mp3; path = Assets.xcassets/catMeow/catMeow.mp3; sourceTree = "<group>"; };
+		BBBBB64A28E29B6100CB6CBC /* birdChirp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = birdChirp.mp3; path = "Assets.xcassets/Bird-chirping-message-tone/birdChirp.mp3"; sourceTree = "<group>"; };
+		BBD6051428DAEE56009B796C /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +78,20 @@
 				BB7BE5C828CF872A00CA2E88 /* AppDelegate.swift */,
 				BB7BE5CA28CF872A00CA2E88 /* SceneDelegate.swift */,
 				BB7BE5CC28CF872A00CA2E88 /* ViewController.swift */,
+				BB198C8728DF0A8900314A77 /* Pet.swift */,
 				BB7BE5CE28CF872A00CA2E88 /* Main.storyboard */,
+				BBD6051428DAEE56009B796C /* DisplayView.swift */,
+				BB198C8928E171BF00314A77 /* Readme.md */,
 				BB7BE5D128CF872E00CA2E88 /* Assets.xcassets */,
 				BB7BE5D328CF872E00CA2E88 /* LaunchScreen.storyboard */,
 				BB7BE5D628CF872E00CA2E88 /* Info.plist */,
+				BB7F7F7828E2A1F1008CD2D0 /* dogBark.mp3 */,
+				BBBBB64828E29B1100CB6CBC /* catMeow.mp3 */,
+				BBBBB64A28E29B6100CB6CBC /* birdChirp.mp3 */,
+				BB7F7F7C28E2A25B008CD2D0 /* fishSplash.mp3 */,
+				BB7F7F7E28E2A27E008CD2D0 /* bunnyBounce.mp3 */,
+				BB7F7F8228E2A309008CD2D0 /* levelSound.mp3 */,
+				BB7F7F8428E2A58A008CD2D0 /* evolveSound.mp3 */,
 			);
 			path = PocketPet;
 			sourceTree = "<group>";
@@ -126,8 +155,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB7BE5D528CF872E00CA2E88 /* LaunchScreen.storyboard in Resources */,
+				BB7F7F7D28E2A25B008CD2D0 /* fishSplash.mp3 in Resources */,
 				BB7BE5D228CF872E00CA2E88 /* Assets.xcassets in Resources */,
+				BBBBB64B28E29B6100CB6CBC /* birdChirp.mp3 in Resources */,
+				BBBBB64928E29B1100CB6CBC /* catMeow.mp3 in Resources */,
+				BB7F7F7F28E2A27E008CD2D0 /* bunnyBounce.mp3 in Resources */,
+				BB7F7F8328E2A309008CD2D0 /* levelSound.mp3 in Resources */,
 				BB7BE5D028CF872A00CA2E88 /* Main.storyboard in Resources */,
+				BB7F7F7928E2A1F1008CD2D0 /* dogBark.mp3 in Resources */,
+				BB7F7F8528E2A58A008CD2D0 /* evolveSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB198C8828DF0A8900314A77 /* Pet.swift in Sources */,
 				BB7BE5CD28CF872A00CA2E88 /* ViewController.swift in Sources */,
 				BB7BE5C928CF872A00CA2E88 /* AppDelegate.swift in Sources */,
+				BBD6051528DAEE56009B796C /* DisplayView.swift in Sources */,
 				BB7BE5CB28CF872A00CA2E88 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

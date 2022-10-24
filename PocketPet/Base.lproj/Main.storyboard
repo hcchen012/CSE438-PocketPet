@@ -1,24 +1,290 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PocketPet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtu-G2-7bo">
+                                <rect key="frame" x="0.0" y="44" width="390" height="505"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-XN-x7E">
+                                        <rect key="frame" x="145.66666666666666" y="203" width="99" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="99" id="6ve-fZ-IMd"/>
+                                            <constraint firstAttribute="width" constant="99" id="Lej-ll-OKF"/>
+                                            <constraint firstAttribute="width" secondItem="tnp-XN-x7E" secondAttribute="height" multiplier="1:1" id="tuq-ad-ZnW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mra-99-G6R">
+                                        <rect key="frame" x="17.999999999999996" y="20" width="48.666666666666657" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="LabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Mra-99-G6R" secondAttribute="trailing" constant="20" symbolic="YES" id="7BL-ra-Zez"/>
+                                    <constraint firstItem="tnp-XN-x7E" firstAttribute="centerY" secondItem="dtu-G2-7bo" secondAttribute="centerY" id="Aog-GB-4AH"/>
+                                    <constraint firstItem="tnp-XN-x7E" firstAttribute="centerX" secondItem="dtu-G2-7bo" secondAttribute="centerX" id="ODJ-X7-S7q"/>
+                                    <constraint firstItem="Mra-99-G6R" firstAttribute="top" secondItem="dtu-G2-7bo" secondAttribute="top" constant="20" symbolic="YES" id="ibN-Uw-mQ3"/>
+                                    <constraint firstItem="Mra-99-G6R" firstAttribute="leading" secondItem="dtu-G2-7bo" secondAttribute="leading" constant="18" id="xHY-eH-JgE"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VZ4-UH-mMC" userLabel="Buttons Stack View">
+                                <rect key="frame" x="30" y="574" width="330" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9Q-gy-ooK">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="2fF-sZ-IBn"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="MiA-Tg-jmS"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Play">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" name="ButtonBGColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJ2-q5-r8T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzM-vr-bQo">
+                                        <rect key="frame" x="185" y="0.0" width="145" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="nRc-4k-rr6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="rn3-Ub-kd8"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Feed">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            <color key="baseBackgroundColor" name="ButtonBGColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="feedClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WSi-J5-Gks"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pgA-Q4-CJk" userLabel="Bars Stack View">
+                                <rect key="frame" x="20" y="620" width="350" height="130"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPq-ki-2tv" userLabel="Happiness">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KSr-Lu-nzW">
+                                                <rect key="frame" x="8" y="2.3333333333333712" width="334" height="55.333333333333336"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y6R-si-DVc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="20.333333333333332"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happiness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC2-Gg-9iQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="173" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="played: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-MB-GB0">
+                                                                <rect key="frame" x="178" y="0.0" width="156" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="LabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zA2-Wx-yxb" customClass="DisplayView" customModule="PocketPet" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="25.333333333333258" width="334" height="30"/>
+                                                        <color key="backgroundColor" name="ButtonBGColor"/>
+                                                        <color key="tintColor" name="ButtonBGColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="ItP-z2-Wkg"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="8Xy-hx-86y"/>
+                                            <constraint firstItem="KSr-Lu-nzW" firstAttribute="centerX" secondItem="FPq-ki-2tv" secondAttribute="centerX" id="Onf-hg-pX4"/>
+                                            <constraint firstItem="KSr-Lu-nzW" firstAttribute="centerY" secondItem="FPq-ki-2tv" secondAttribute="centerY" id="WMf-T5-gcb"/>
+                                            <constraint firstItem="KSr-Lu-nzW" firstAttribute="leading" secondItem="FPq-ki-2tv" secondAttribute="leading" constant="8" id="avM-CA-8u5"/>
+                                            <constraint firstAttribute="trailing" secondItem="KSr-Lu-nzW" secondAttribute="trailing" constant="8" id="oNA-Hy-OAE"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHy-o9-2fJ" userLabel="Food">
+                                        <rect key="frame" x="0.0" y="70" width="350" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Rpe-bc-zQb">
+                                                <rect key="frame" x="8" y="2.3333333333333712" width="334" height="55.333333333333336"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wvi-Im-pHv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="20.333333333333332"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyC-Co-F6k">
+                                                                <rect key="frame" x="0.0" y="0.0" width="209.66666666666666" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fed: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnr-ro-aHQ">
+                                                                <rect key="frame" x="214.66666666666666" y="0.0" width="119.33333333333334" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="LabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1M-Rr-j4c" customClass="DisplayView" customModule="PocketPet" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="25.333333333333258" width="334" height="30"/>
+                                                        <color key="backgroundColor" name="ButtonBGColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="dxA-Tj-E8L"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Rpe-bc-zQb" firstAttribute="centerX" secondItem="UHy-o9-2fJ" secondAttribute="centerX" id="6R5-nR-dL8"/>
+                                            <constraint firstItem="Rpe-bc-zQb" firstAttribute="leading" secondItem="UHy-o9-2fJ" secondAttribute="leading" constant="8" id="BS6-6g-DVm"/>
+                                            <constraint firstItem="Rpe-bc-zQb" firstAttribute="centerY" secondItem="UHy-o9-2fJ" secondAttribute="centerY" id="Ic6-ln-GZZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rpe-bc-zQb" secondAttribute="trailing" constant="8" id="jIc-h4-4Uj"/>
+                                            <constraint firstAttribute="height" constant="60" id="oZE-Fa-4HY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal" spacing="30"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LBU-GY-snY" userLabel="Animal Stack View">
+                                <rect key="frame" x="25" y="770" width="340" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp3-9T-Pv0">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Dog">
+                                            <color key="titleColor" name="PetButtonColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changedPet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q6V-Th-jdM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZo-AI-XWZ">
+                                        <rect key="frame" x="77.666666666666671" y="0.0" width="30" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Cat">
+                                            <color key="titleColor" name="PetButtonColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changedPet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p42-4W-fdi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUR-FB-Eyt">
+                                        <rect key="frame" x="155" y="0.0" width="30" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Bird">
+                                            <color key="titleColor" name="PetButtonColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changedPet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P0a-8B-xes"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eas-kc-UvN">
+                                        <rect key="frame" x="226" y="0.0" width="43" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Bunny">
+                                            <color key="titleColor" name="PetButtonColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changedPet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDk-2M-DF2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyX-HH-DWX">
+                                        <rect key="frame" x="310" y="0.0" width="30" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Fish">
+                                            <color key="titleColor" name="PetButtonColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changedPet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4T-fi-zeD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VZ4-UH-mMC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="0Df-Mo-Pd4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dtu-G2-7bo" secondAttribute="trailing" id="2nM-lX-mPN"/>
+                            <constraint firstItem="dtu-G2-7bo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FYh-bZ-ZPp"/>
+                            <constraint firstItem="pgA-Q4-CJk" firstAttribute="top" secondItem="VZ4-UH-mMC" secondAttribute="bottom" constant="15" id="Ghz-go-3Zv"/>
+                            <constraint firstItem="LBU-GY-snY" firstAttribute="top" secondItem="pgA-Q4-CJk" secondAttribute="bottom" constant="20" id="HPh-ql-NdB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LBU-GY-snY" secondAttribute="trailing" constant="25" id="VhD-M1-U8J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VZ4-UH-mMC" secondAttribute="trailing" constant="30" id="WjO-dy-0t0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pgA-Q4-CJk" secondAttribute="trailing" constant="20" id="dj7-LB-nKo"/>
+                            <constraint firstItem="VZ4-UH-mMC" firstAttribute="top" secondItem="dtu-G2-7bo" secondAttribute="bottom" constant="25" id="hZq-BS-INC"/>
+                            <constraint firstItem="FPq-ki-2tv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k3e-8F-rxW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UHy-o9-2fJ" secondAttribute="trailing" constant="20" id="klQ-Ai-R3k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LBU-GY-snY" secondAttribute="bottom" constant="10" id="mVo-1B-ia6"/>
+                            <constraint firstItem="LBU-GY-snY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="rMl-Gv-Mnq"/>
+                            <constraint firstItem="dtu-G2-7bo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vVI-5b-a1b"/>
+                            <constraint firstItem="pgA-Q4-CJk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yc2-oc-bpl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="background" destination="dtu-G2-7bo" id="GYv-Va-Bwr"/>
+                        <outlet property="birdButton" destination="TUR-FB-Eyt" id="sCW-g4-tA4"/>
+                        <outlet property="bunnyButton" destination="eas-kc-UvN" id="egM-wa-QCd"/>
+                        <outlet property="catButton" destination="gZo-AI-XWZ" id="Pyl-kv-Dbu"/>
+                        <outlet property="dogButton" destination="qp3-9T-Pv0" id="a3m-lr-bgW"/>
+                        <outlet property="feedButton" destination="lzM-vr-bQo" id="vZt-lf-aMN"/>
+                        <outlet property="fishButton" destination="FyX-HH-DWX" id="gEw-H7-1yV"/>
+                        <outlet property="foodBar" destination="H1M-Rr-j4c" id="Lf3-GL-5TW"/>
+                        <outlet property="foodLabel" destination="fnr-ro-aHQ" id="nCM-A6-4c5"/>
+                        <outlet property="happyBar" destination="zA2-Wx-yxb" id="l8j-Kg-vNL"/>
+                        <outlet property="happyLabel" destination="aEF-MB-GB0" id="g2V-rw-qzQ"/>
+                        <outlet property="levelLabel" destination="Mra-99-G6R" id="Lfp-sU-kLW"/>
+                        <outlet property="petImage" destination="tnp-XN-x7E" id="Uv6-tG-jeS"/>
+                        <outlet property="playButton" destination="d9Q-gy-ooK" id="gNa-33-Ban"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="26.13065326633166" y="55.395683453237417"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonBGColor">
+            <color red="0.83125857290046135" green="0.83509602499933133" blue="0.84660838129594151" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="LabelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PetButtonColor">
+            <color red="0.19323474169999999" green="0.45171201230000002" blue="0.85886543989999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
